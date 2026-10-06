@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "JUNTOS",
+    "slug": "juntos-movil",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "juntos",
+    "splash": { "image": "./assets/logo.png", "resizeMode": "contain", "backgroundColor": "#FFFFFF" },
+    "ios": {
+      "bundleIdentifier": "com.juntos.app",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "JUNTOS usa su ubicación solo para confirmar que la acompañante llegó al lugar.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.juntos.app",
+      "adaptiveIcon": { "foregroundImage": "./assets/adaptive-icon.png", "backgroundColor": "#FFFFFF" },
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "plugins": ["expo-location"]
+  }
+}
